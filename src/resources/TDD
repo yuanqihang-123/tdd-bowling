@@ -1,0 +1,27 @@
+given：Every round is zero
+when：BowlingGame()
+then：0
+
+given：the game had one spare in the middle
+(1,2)(1,2)(1,2)(1,2)(1,/)(1,2)(1,2)(1,2)(1,2)(1,2)
+when：bowlingGame()
+then：3+3+3+3+11+3+3+3+3+3=38
+
+given：the game had one strike in the middle
+(1,2)(1,2)(1,2)(1,2)(1,2)(,x)(1,2)(1,2)(1,2)(1,2)
+when：bowlingGmae()
+then：3+3+3+3+3+13+3+3+3+3=40
+
+given:the game had one spare at the end
+(1,2)(1,2)(1,2)(1,2)(1,2)(1,2)(1,2)(1,2)(1,2)(1,/)(1,)
+when：bowlingGmae()
+then：3+3+3+3+3+3+3+3+3+11=38
+
+given: the game had one strike at the end
+(1,2)(1,2)(1,2)(1,2)(1,2)(1,2)(1,2)(1,2)(1,2)(,x)(1,2)
+when：bowlingGmae()
+then：3+3+3+3+3+13+3+3+3+13=40
+
+given:every round is ten
+when:bowlingGame()
+then:30*10=300
